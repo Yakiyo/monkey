@@ -12,17 +12,17 @@ const (
 	INT   = "INT"
 
 	// operators
-	ASSIGN = "="
-	PLUS   = "+"
-	MINUS = "-"
-	BANG = "!"
+	ASSIGN   = "="
+	PLUS     = "+"
+	MINUS    = "-"
+	BANG     = "!"
 	ASTERISK = "*"
-	SLASH = "/"
+	SLASH    = "/"
 
 	// comparison operators
 	LT = "<"
 	GT = ">"
-	
+
 	// delimiters
 	COMMA     = ","
 	SEMICOLON = ";"
