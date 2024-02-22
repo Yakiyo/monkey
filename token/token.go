@@ -11,12 +11,20 @@ const (
 	IDENT = "IDENT"
 	INT   = "INT"
 
-	// Operators
+	// operators
 	ASSIGN = "="
 	PLUS   = "+"
+	MINUS = "-"
+	BANG = "!"
+	ASTERISK = "*"
+	SLASH = "/"
 
+	// comparison operators
+	LT = "<"
+	GT = ">"
+	
 	// delimiters
-	COMMA    = ","
+	COMMA     = ","
 	SEMICOLON = ";"
 
 	LPAREN = "("
@@ -34,4 +42,16 @@ const (
 type Token struct {
 	Type    TokenType
 	Literal string
+}
+
+var keywords = map[string]TokenType{
+	"fn":  FUNCTION,
+	"let": LET,
+}
+
+func LookupIdent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
 }
