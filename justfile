@@ -6,3 +6,9 @@ build:
 
 test:
 	@go test -v ./...
+
+fmt:
+	@go fmt ./...
+
+@run *arg:
+    go run main.go $@
