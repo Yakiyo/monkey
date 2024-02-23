@@ -20,9 +20,9 @@ const (
 	SLASH    = "/"
 
 	// comparison operators
-	LT = "<"
-	GT = ">"
-	EQ = "=="
+	LT     = "<"
+	GT     = ">"
+	EQ     = "=="
 	NOT_EQ = "!="
 
 	// delimiters

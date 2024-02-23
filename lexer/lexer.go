@@ -99,7 +99,7 @@ func (l *Lexer) readNumber() string {
 
 func (l *Lexer) readChar() {
 	l.ch = l.peekChar()
-	
+
 	l.position = l.readPosition
 	l.readPosition += 1
 }
