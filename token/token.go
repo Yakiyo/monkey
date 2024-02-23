@@ -22,6 +22,8 @@ const (
 	// comparison operators
 	LT = "<"
 	GT = ">"
+	EQ = "=="
+	NOT_EQ = "!="
 
 	// delimiters
 	COMMA     = ","
